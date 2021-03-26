@@ -1,10 +1,10 @@
 # Formation Git Elephorm
 
-Tout au cours de ce TP, nous allons tenter d'écrire un convertisseur
+Throughout this lab, we will try to write a converter
 
-Nous voulons que notre application sache faire plusieurs choses :
+We want our application to know how to do several things:
 
-### Écrire des titres
+### Writing titles
 
 # h1
 ## h2
@@ -13,42 +13,42 @@ Nous voulons que notre application sache faire plusieurs choses :
 ##### h5
 ###### h6
 
-### Mettre des éléments en gras
+### Make elements bold
 
-**comme ici**
+**like here**
 
-### Mettre des élements barrés
-( ne fonctionne pas sous github )
+### Put crossed out elements
+(does not work under github)
 
-~~comme ici~~
+~~ like here ~~
 
-### Mettre des éléments en italique
+### Italicize items
 
-*comme là*
+*as the*
 
-### Écrire des liens
+### Write links
 
-Voici la documentation de référence de [markdown](http://en.wikipedia.org/wiki/Markdown) et [HTML](http://en.wikipedia.org/wiki/HTML).
+Here is the reference documentation for [markdown] (http://en.wikipedia.org/wiki/Markdown) and [HTML] (http://en.wikipedia.org/wiki/HTML).
 
-### Écrire des listes numérotées ou pas
+### Write numbered lists or not
 
-1. At vero eos et accusamus et iusto odio dignissimos ducimus
-2. Qui blanditiis praesentium voluptatum deleniti atque corrupti
-  * Quos dolores et quas molestias excepturi sint
-  * Obcaecati *cupiditate **non** provident*
-  * Et harum quidem rerum facilis est et expedita distinctio
-    1. Neque porro quisquam
-    2. est qui dolorem ipsum
-    3. quia dolor sit amet
-    4. consectetur adipisci velit
-3. Quis autem vel eum iure reprehenderit
-4. qui in ea voluptate velit esse
+1. However, they also denounce the error sit involvement
+2. The one who, corrupted by the flattery of the present and the pleasures deleniti
+  * And the pain and hardship that they are welcome
+  * * Blinded by the desire to provide ** no ** *
+  And this is the difference between simple and easy
+    1. For any further
+    2. The pain itself
+    3. For carrots
+    4. wants to obtain enhanced
+3. Who has any right to criticize
+4. who is a pleasure that
 
-### Afficher des lignes séparatrices
+### Show dividing lines
 
 ---
 
-### Écrire du code
+### Write code
 
 
 ```
@@ -57,41 +57,41 @@ Voici la documentation de référence de [markdown](http://en.wikipedia.org/wiki
 
 ```
 
-### Pouvoir référencer des liens sur les réseaux sociaux.
-( ne fonctionne pas sous github )
+### To be able to reference links on social networks.
+(does not work under github)
 
 * Twitter @elephorm@t
 * GitHub @sabativi@gh
 * Facebook @elephorm@fb
 * Google+ @elephorm@gp
 
-## Fonctionnement de l'application
+## How the application works
 
-### Dépendances
+### Dependencies
 
-L'application est développée en [nodejs](https://nodejs.org). Pour plus d'informations cliquez sur le lien.
+The application is developed in [nodejs] (https://nodejs.org). For more information click on the link.
 
-Elle a besoin du [node package manager](https://www.npmjs.com) pour installer les dépendances.
+It needs the [node package manager] (https://www.npmjs.com) to install the dependencies.
 
-Vous devez avoir `nodejs` et `npm` installé sur votre machine. L'installeur de nodejs est présent [ici](https://nodejs.org/download/). Npm est installé avec node. Si vous voulez plus d'informations avec notamment une vidéo de présentation, c'est [ici](https://docs.npmjs.com/getting-started/installing-node).
+You must have `nodejs` and` npm` installed on your machine. The nodejs installer is present [here] (https://nodejs.org/download/). Npm is installed with node. If you want more information including a presentation video, it's [here] (https://docs.npmjs.com/getting-started/installing-node).
 
-Assurez vous aussi d'avoir un compte github.
+Also make sure you have a github account.
 
-Une fois fait, vous devez :
+Once done, you must:
 
-1. Forker le repository : en cliquant sur le bouton fork en haut à droite. Ceci constituera votre copie du serveur sur laquelle vous pourrez partager des modifications.
-2. Rentrer dans le répertoire : `cd Realtime-Markdown-Viewer`
-3. Installer les dépendances : `npm install`
-4. Lancez l'application : `npm run dev`
-5. Allez à cette [url](http://localhost:8000)
+1. Fork the repository: by clicking on the fork button at the top right. This will be your copy of the server where you can share changes.
+2. Go into the directory: `cd Realtime-Markdown-Viewer`
+3. Install dependencies: `npm install`
+4. Start the application: `npm run dev`
+5. Go to this [url] (http: // localhost: 8000)
 
-Vous devez vous retrouver avec ceci comme écran : ![](./docs/result.png)
+You should end up with this as a screen:! [] (./ docs / result.png)
 
-### Fonctionnement pour le TP.
+### Operation for the TP.
 
-Le répertoire qui nous intéresse est le répertoire `converter`. Vous n'aurez pas besoin de manipuler d'autres fichiers.
+The directory that interests us is the `converter` directory. You will not need to manipulate other files.
 
-Ce dernier a la structure suivante :
+The latter has the following structure:
 
 * **markdown.js**
 * tests/
@@ -99,49 +99,48 @@ Ce dernier a la structure suivante :
 	* **features/** 
 	* utils.js
 
-Le fichier `markdown` contient le parser.
+The `markdown` file contains the parser.
 
-Le répertoire `features` contient un ensemble de fichier markdown et html pour nos tests.
+The `features` directory contains a set of markdown and html files for our tests.
 
-Lorsque nous ajoutons une nouvelle fonctionnalité, nous allons accompagner celle ci d'un test, afin de vérifier son bon fonctionnement.
+When we add a new feature, we will accompany it with a test, in order to verify its correct functioning.
 
-Pour ajouter un test, il suffit d'ajouter un fichier markdown et un fichier html portant le même nom dans le répertoire.
+To add a test, just add a markdown file and an html file with the same name in the directory.
 
-Pour lancer les tests, la commande à éxécuter à la racine du projet est :
+To run the tests, the command to run at the root of the project is:
 
 ```
 npm run test
 ```
 
 
-À gauche, vous avez le panel dans lequel vous pouvez écrire du markdown et à droite le rendu HTML.
+On the left you have the panel where you can write markdown and on the right HTML rendering.
 
 
-Nous avons déjà développé une fonctionnalité pour vous. Le parsing des différents titres.
+We have already developed a feature for you. The parsing of the different titles.
 
-Essayer le code suivant dans le panel de gauche :
+Try the following code in the left panel:
 
 ```
-# Un grand titre
-### Un plus petit titre
-##### Doit correspondre à une balise <h5>
+# A great title
+### A smaller title
+##### Must match a <h5> tag
  
 ```
 
-Vous devriez avoir le panel de droite qui se met à jour automatiquement.
+You should have the right panel which updates automatically.
 
-Par contre si vous essayez d'écrire :
+On the other hand, if you try to write:
 
 ```
-**Ce texte doit apparaitre en gras**
+** This text must appear in bold **
 ```
 
-Vous pouvez voir qu'il ne se passe rien.
+You can see that nothing is happening.
 
-Tout au cours de ce TP, nous allons ajouter des fonctionnalités à notre parser Markdown.
+Throughout this lab, we will be adding features to our Markdown parser.
 
-L'objectif du TP n'est pas de faire le parser, nous l'utilisons comme pretexte pour utiliser git, toutes les réponses vous seront données au cours du TP, par contre, vous devez comprendre ce que vous faites quand vous utilisez des commandes git.
-
+The goal of the lab is not to make the parser, we use it as a pretext to use git, all the answers will be given to you during the lab, on the other hand, you need to understand what you are doing when using commands git.
 
 
 
